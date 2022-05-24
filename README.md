@@ -19,6 +19,7 @@
 
 - Run laravel:mix
 > npm run dev
+> (npm install autoprefixer@10.4.5 --save-exact)
 
 - Publec storage
 > php artisan storage:link
