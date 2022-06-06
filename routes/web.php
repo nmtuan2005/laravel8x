@@ -20,10 +20,6 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/add-product', function(){
-    return view('product/add');
-});
-
-Route::post('product', [App\Http\Controllers\ProductController::class, 'store']);
+Route::resource('products', App\Http\Controllers\ProductController::class);
