@@ -1,14 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container-fluid pt-4 px-4">
+<div class="container pt-4 px-4">
     <div class="bg-light rounded h-50 p-4">
         <div class="row g-4">
             <h3>Danh Sách Sản Phẩm</h3>
         </div>
     </div>
 </div>
-<div class="container-fluid pt-4 px-4">
+<div class="container pt-4 px-4">
     <div class="bg-light rounded p-4">
         <a href="{{ route('products.create') }}" class="btn btn-primary" role="button">Thêm mới</a>
         <div class="table-responsive table-wrapper-scroll-y my-custom-scrollbar">

@@ -23,3 +23,5 @@ Auth::routes();
 Route::get('home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::resource('products', App\Http\Controllers\ProductController::class);
+Route::resource('users', App\Http\Controllers\UserController::class);
+Route::get('profile', [App\Http\Controllers\UserController::class, 'profile'])->middleware('auth')->name('profile');
