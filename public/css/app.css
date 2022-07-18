@@ -2155,10 +2155,6 @@ progress {
   margin-bottom: 0.5rem;
 }
 
-.form-group {
-  margin-bottom: 1rem;
-}
-
 .col-form-label {
   padding-top: calc(0.375rem + 1px);
   padding-bottom: calc(0.375rem + 1px);
@@ -11289,4 +11285,7 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+.manage-product{
+  display: flex;
 }
